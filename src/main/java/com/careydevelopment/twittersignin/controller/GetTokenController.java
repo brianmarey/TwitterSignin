@@ -74,7 +74,7 @@ public class GetTokenController {
 			
 			String prefix = props.getProperty("localhost.prefix");
 			sb.append(prefix);
-			sb.append(":8080/TwitterSignin/twitterCallback");
+			sb.append("/TwitterSignin/twitterCallback");
 			
 			callbackUrl = sb.toString();
 			
