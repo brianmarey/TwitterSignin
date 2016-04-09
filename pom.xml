@@ -100,7 +100,7 @@
 </dependencyManagement>
   
   <build>
-    <finalName>TwitterAutomation</finalName>
+    <finalName>TwitterSignin</finalName>
     
     <plugins>
       <plugin>
