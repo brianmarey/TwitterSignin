@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Twitter Sign-In : Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <link th:href="@{/css/autofollow.css}" rel="stylesheet"/>
+    <script th:src="@{/js/jquery.js}"></script>  
+    
+</head>
+<body class="wide">
+<div th:include="fragments/header :: header">...</div>
+        
+
+    <div id="main-wrapper">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+           	
+        <div class="dark-grey">
+            <div class="container">
+            	<div class="row">
+                	<div class="span12">
+                        <div class="page-header">
+							<h1>Successful Login!</h1>
+							<div id="introText">
+							You're logged in as <span th:text="${screenName}"></span> 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<div th:include="fragments/footer :: footer">...</div>
+</body>
+
+</html>
