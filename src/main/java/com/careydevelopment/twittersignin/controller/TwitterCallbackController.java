@@ -2,7 +2,8 @@ package com.careydevelopment.twittersignin.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import twitter4j.auth.RequestToken;
 @Controller
 public class TwitterCallbackController {
 	
-	private static final Logger LOGGER = Logger.getLogger(TwitterCallbackController.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(TwitterCallbackController.class);
  
     @RequestMapping("/twitterCallback")
     public String twitterCallback(@RequestParam(value="oauth_verifier", required=true) String oauthVerifier,
