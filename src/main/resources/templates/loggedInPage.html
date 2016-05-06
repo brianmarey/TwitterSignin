@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Twitter Sign-In : Home</title>
+    <title>Twitter Sign-In : Logged In</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
-
+    
         <!-- Google Fonts -->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300' rel='stylesheet' type='text/css'/>
         <!-- Base Stylesheet -->
@@ -28,13 +28,10 @@
             	<div class="row">
                 	<div class="span12">
                         <div class="page-header">
-							<h1>Twitter Sign-In</h1>
+							<h1>Successful Login!</h1>
 							<div id="introText">
-							Click the button below to login to this web application using Twitter. 
+							You're logged in as <span th:text="${screenName}"></span> 
 							</div>
-						</div>
-						<div>
-							<a href="./getToken"><img th:src="@{/images/sign-in-with-twitter-gray.png}"/></a>
 						</div>
 					</div>
 				</div>
